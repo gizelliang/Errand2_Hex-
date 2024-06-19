@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::after,*::after{
+  box-sizing: border-box;
+}
+
+image{
+    max-width:100%;
+    height:auto;
+    vertical-align: middle;
+}
+
+body{
+    font-family: "Bruno Ace SC", sans-serif;
+    line-height: 1.5;
+    font-size:16px;
+}
+
+.container{
+    width:1296px;
+    margin:0 auto;
+    padding-top: 40px;
+}
+
+header,.banner{
+    background-color: black;
+    color: #d1d1d1;
+}
+
+.introduction{
+    background-image:url(/images/background-img.png)
+}
+.introduction-text{
+    color:#fff;
+    font-size:24px;
+    width:526px;
+}
+.introduction-text h2{
+    font-size:64px;
+   
+}
+.banner-text{
+    
+    width:636px;
+}
+.banner-text h1{
+    font-size:128px;
+    color:#00FFA3;
+    text-align: right;
+}
+
+.button{
+    padding:12px 24px 12px 24px;
+    background-color: #fff;
+    font-size:16px;
+    color:black;
+    border-radius:32px;
+    text-decoration:none;
+   
+}
+.button img{
+   margin-left: 4px;
+   padding-top: 4px;
+}
+header ul{
+display: flex;
+justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+.fs-l{
+    font-size:64px;
+}
+.fs-m{
+    font-size:24px;
+}
+.fs-sm{
+    font-size:20px;
+}
+
+.mr-6 {
+    /* 助教這裡的 class 命名，以 4px 為一個單位， 要推 24px 的話就是 24 / 4 = 6，所以是 .mr-6*/
+    margin-right: 24px;
+  }
+
+.mr-4{
+    margin-right: 16px;
+}
+.mb-9{
+    margin-bottom: 36px;
+}
+.p-40{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.ml-6{
+    margin-left: 24px;
+}
+
+.mb-6{
+    margin-bottom: 24px;
+}
+  .items-center {
+    align-items: center;
+  }
+  .justify-center{
+    justify-content:center;
+  }
+  .self-end {
+    align-self: flex-end;
+  }
+  .self-center{
+    align-self:center;
+  }
+
+  .flex-col{
+    flex-direction:column;
+  }
+
+  .justify-between{
+    justify-content:space-between;
+  }
+.flex-wrap{
+    flex-wrap:wrap;
+}
+.container ol{
+   width:636px;
+}
+.card{
+    border: 1px solid #e3e3e3;
+    padding: 16px;
+    width: calc(50% - 12px);
+}
+  .about-me-text{
+   width:526px;
+  }
+
+  .contact{
+    background-image: linear-gradient(#050014 100%,#01021E 89%);
+    color:#ffff;
+    padding-top: 127px;
+    padding-bottom: 127px;
+  }
+  
+  .contact-text img{
+    transform: rotate(45deg);
+    width:100px;
+    height:100px;
+  }
+
+  .contact .image {
+    /* object-fit: cover; 讓圖維持設定好的寬高，並且圖片會自動裁切掉邊緣，防止圖片被壓縮變形 */
+    /* 可參考文章 https://www.casper.tw/development/2020/10/11/img-cover/ */
+    object-fit: cover;
+    /* 加入圓角 */
+    border-radius: 40px;
+    width: 162px;
+    height: 162px;
+  }
+
+  .contact .image:hover {
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+    border-radius: 40px;
+  }
+
+ 
+
+  
